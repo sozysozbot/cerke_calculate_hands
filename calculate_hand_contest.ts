@@ -58,7 +58,7 @@ function calculate_hand_contest() {
             }
         }
 
-        html += `<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=私の役判定正答率は……%20${correct_num / TOTAL_PROB_NUM * 100}%25%20%28${correct_num}/${TOTAL_PROB_NUM}%29%0D%0A%23cerke%20%23机戦%20%23机戦の役判定100本ノック%20${location.href}%3Fcorrect%3D${correct.join(".")}%26incorrect%3D${incorrect.join(".")}" data-size="large">
+        html += `<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=私の役判定正答率は%20${correct_num / TOTAL_PROB_NUM * 100}%25%20%28${correct_num}/${TOTAL_PROB_NUM}%29%0D%0A%23cerke%20%23机戦%20%23机戦の役判定100本ノック%20${location.href}%3Fcorrect%3D${correct.join(".")}%26incorrect%3D${incorrect.join(".")}" data-size="large">
         ツイートする</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`
         document.getElementById("contest")!.innerHTML = "";
         document.getElementById("result")!.innerHTML = html;
